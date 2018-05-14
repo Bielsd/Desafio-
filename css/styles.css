@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.parallax {
+    background-image: url("../img/background.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{ 
+    position: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    height: 100px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 100px; 
+    font-family: 'Merienda', cursive;
+}
+
+header h1{
+    margin:0px;
+}
+
+header p{   
+    margin: 0px;
+    font-size: 20px;
+}
+
+header p a{
+    margin: 0px;
+    text-decoration: none; 
+    color: white;
+    
+}
+header p a:hover{
+    color: rgba(0, 0, 255, 0.438);
+}
+.tattoo{ 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+color: white;
+}
+header a img{
+    width: 100px;
+    height: 100px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+   padding-top: 100px;
+    height: 305px;
+    width: 80%;
+  
+}
+
+.produtos{
+    color: #fefefe;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.produtos div{    
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.produtos div img{
+    border-radius: 25px;
+    height: 50%;
+    width: 100%;
+}
+
+.produtos div p{
+    margin: 0;
+}
+
+.produtos div .titulo{
+    font-size: 26px;
+}
+
+footer{display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+footer .rs a img {
+     width: 35px;
+     height: 35px;
+}
+
+/* css modal */
+
+#myBtn {
+    
+    height: 45px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(9, 178, 201);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#myBtn:hover{
+    background-color:black;
+    color:white;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: black;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: black;
+    color: white;
+}
+
+/* conteúdo Modal  */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* modal Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* botão de fechar */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media(max-width: 1260px){
+    .tattoo{
+        max-height: 100px;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 686px){
+    header h1{        
+        font-size: 20px;
+    }
+    header p{
+        font-size: 15px;
+    }
+
+    .tattoo{
+        max-height: 150px;
+        width: 100%;
+        font-size: 12px;
+    }
+   
+    .banner{
+        flex-direction: column;
+        display: block;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+    .produtos div{
+        width: 100%;
+    }
+
+}
